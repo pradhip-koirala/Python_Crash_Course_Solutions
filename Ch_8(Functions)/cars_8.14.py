@@ -7,13 +7,13 @@ def make_car (manufacturer, model,**detail):
     return car
 
 car = make_car('subaru','outback',
-                  color ='blue',
-                  tow_package =True)
+                  color='blue',
+                  tow_package=True)
 
 print(car)
 
 toyota = make_car('toyota','suiz',
                   color='red',
-                  seat = 4)
+                  seat=4)
 
 print(toyota)
