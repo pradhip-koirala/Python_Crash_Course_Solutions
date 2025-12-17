@@ -1,3 +1,5 @@
+'''passing list to a function and printing it'''
+
 magicians =['william','modi','trump','walker','op']
 
 great_magicians =[]

@@ -6,7 +6,6 @@ def make_great(magicians):
         magician = magicians.pop()
         great_magicians.append('the Great '+magician)
 
-    # print(great_magicians)
 
     show_magicians(great_magicians)
 
