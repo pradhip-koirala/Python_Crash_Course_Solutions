@@ -1,0 +1,9 @@
+python variables and simple data types
+python lists
+python working with lists
+python if statements
+dictionaries
+python user input and while loop
+python function
+python classes
+python files and exceptions
