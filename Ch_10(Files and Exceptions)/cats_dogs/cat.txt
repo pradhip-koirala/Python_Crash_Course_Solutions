@@ -1,0 +1,3 @@
+rosy
+sofi
+kitty
