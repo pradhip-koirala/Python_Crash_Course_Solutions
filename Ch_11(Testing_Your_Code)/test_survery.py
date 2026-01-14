@@ -3,22 +3,24 @@ from survey import AnonymousSurvey
 
 class TestAnonmyousSurvey(unittest.TestCase):
 
-    def test_store_single_response(self):
+    def setUp(self):
         question = 'What language did you first learn to speak?'
-        my_survery = AnonymousSurvey(question)
+        self.my_survey = AnonymousSurvey(question)
+        self.responses = ['English', 'Spanish', 'Mandarin']
 
-        my_survery.store_response('English')
+    def test_store_single_response(self):
+        self.my_survey.store_response(self.responses[0])
 
-        self.assertIn('English', my_survery.responses)
+        self.assertIn(self.responses[0], self.my_survey.responses)
+
 
     def test_store_three_response(self):
-        question = "What language did you first learn to speak?"
-        my_survey = AnonymousSurvey(question)
-        responses = ['English', 'Spanish', 'Mandarin']
-        for response in responses:
-            my_survey.store_response(response)
+        
+        
+        for response in self.responses:
+            self.my_survey.store_response(response)
 
-        for res in responses:
-            self.assertIn(res, my_survey.responses)
+        for res in self.responses:
+            self.assertIn(res, self.my_survey.responses)
 
 unittest.main()
